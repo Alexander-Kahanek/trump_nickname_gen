@@ -1,15 +1,18 @@
-defmodule PhoenixLiveHtml.LiveHTMLChannel do
+defmodule TrumpGen.LiveHTMLChannel do
   use Phoenix.Channel
+
+  require Logger
 
   def join("live-html", _message, socket) do
     {:ok, socket}
   end
 
-  def handle_in("generate_name", %{"gen" => gen, "text" => text},
-    socket) do
-      html = Phoenix.View.render_to_string(PhoenixLiveHtml.PageView, "generate.html", text: text)
+  @spec handle_in(<<_::104>>, map, Phoenix.Socket.t()) :: {:noreply, Phoenix.Socket.t()}
+  def handle_in("generate_name", %{"gen" => "gen", "text" => text}, socket) do
 
-      broadcast!(socket, "live_response", %{html: html})
-      {:noreply, socket}
-    end
+    html = Phoenix.View.render_to_string(TrumpGenWeb.PageView, "generate.html", text: text)
+
+    broadcast!(socket, "live_response", %{html: html})
+    {:noreply, socket}
+  end
 end
