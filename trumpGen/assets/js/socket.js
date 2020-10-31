@@ -57,20 +57,19 @@ socket.connect()
 let channel = socket.channel("live-html", {})
 
 let liveDiv = $("#live-div")
-// liveDiv.empty()
+liveDiv.empty()
 
 let textInput = $("#given-name")
 let generate = $("#generate-button")
 
 generate.click(() => {
-  channel.push('generate_name', {gen:"gen", text: textInput.val()})
+  channel.push('generate_name', {gen:"generate", text: textInput.val()})
 })
 
-
-channel.on("live_response", payload => {
-  // Logger.info("Payload is sent: #{payload.html}")
+channel.on('live_response', payload => {
   liveDiv.empty()
-  liveDiv.append(payload.html)
+  liveDiv.append("test1")
+  liveDiv.append(generate.html)
 })
 
 
