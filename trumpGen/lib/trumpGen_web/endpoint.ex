@@ -7,7 +7,7 @@ defmodule TrumpGenWeb.Endpoint do
   @session_options [
     store: :cookie,
     key: "_trumpGen_key",
-    signing_salt: "r5F8H3QX"
+    signing_salt: "6smuTkcI"
   ]
 
   socket "/socket", TrumpGenWeb.UserSocket,

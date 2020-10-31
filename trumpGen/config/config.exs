@@ -13,10 +13,10 @@ config :trumpGen,
 # Configures the endpoint
 config :trumpGen, TrumpGenWeb.Endpoint,
   url: [host: "localhost"],
-  secret_key_base: "5D0Ydi25c4cMXV4edPvZUtXHUTvPFF8zUo/2fy8oXtzmuOz1EepUw0fIDucrCO00",
+  secret_key_base: "FY4AvBqGt82I+4iCJag8GvbME7//ALN0oVsu6CKNGg1DLWFd3V9DvVSbxQUJiq3L",
   render_errors: [view: TrumpGenWeb.ErrorView, accepts: ~w(html json), layout: false],
   pubsub_server: TrumpGen.PubSub,
-  live_view: [signing_salt: "o5FIO1Kf"]
+  live_view: [signing_salt: "hryF6qwX"]
 
 # Configures Elixir's Logger
 config :logger, :console,

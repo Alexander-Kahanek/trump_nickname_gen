@@ -3,7 +3,7 @@ defmodule TrumpGenWeb.UserSocket do
 
   ## Channels
   # channel "nickname", SampleWeb.ExampleChannel
-  channel "live-html", PhoenixLiveHtml.LiveHTMLChannel
+  channel "live-html", TrumpGen.LiveHTMLChannel
   # channel "room:*", TrumpGenWeb.RoomChannel
 
   # Socket params are passed from the client and can
@@ -37,10 +37,10 @@ defmodule TrumpGenWeb.UserSocket do
 end
 
 
-defmodule PhoenixLiveHtml.UserSocket do
+defmodule TrumpGen.UserSocket do
   use Phoenix.Socket
 
-  channel "live-html", PhoenixLiveHtml.LiveHTMLChannel
+  channel "live-html", TrumpGen.LiveHTMLChannel
 
   transport :websocket, Phoenix.Transports.WebSocket
 
