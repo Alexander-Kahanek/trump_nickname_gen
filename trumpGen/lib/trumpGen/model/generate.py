@@ -1,5 +1,6 @@
 import os
 from erlport.erlterms import Atom
+import numpy
 # from sklearn.externals import joblib
 
 

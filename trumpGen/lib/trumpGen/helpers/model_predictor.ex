@@ -4,7 +4,7 @@ defmodule TrumpGen.ModelPredictor do
   alias TrumpGen.PythonHelper, as: Helper
   require Logger
 
-  @path 'lib/trumpGen/model/'
+  @path 'priv/py38/'
 
   def predict(args) do
     result = call_python(:generate, :generate_name, args)
