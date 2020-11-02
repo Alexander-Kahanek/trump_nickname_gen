@@ -1,4 +1,0 @@
-<div style="background-color: red; color:white" align="center">
-    <h1><%= @text %></h1>
-
-</div>
