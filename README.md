@@ -2,7 +2,7 @@
 
 This repository holds the analysis of data, the process of training a model, and the final model and output decoding produced for generating nicknames based on Trump's unique nickname data from Wikipedia.
 
-: > data: https://en.wikipedia.org/wiki/List_of_nicknames_used_by_Donald_Trump
+data: https://en.wikipedia.org/wiki/List_of_nicknames_used_by_Donald_Trump
 
 The data was scraped directly from Wikipedia, then I created the Tableau Dashboard to display the patterns based on the initial exploratory data analysis. The data was then used to create two different approaches to generating nicknames based on a user given input name. Both methods used a LSTM Neural Network for training. The character-based generation method did not have good results; however, the word-based generation method had great results due to the addition of affix's being encoded into the data as embeddings.
 
