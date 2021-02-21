@@ -6,6 +6,8 @@ data: https://en.wikipedia.org/wiki/List_of_nicknames_used_by_Donald_Trump
 
 The data was scraped directly from Wikipedia, then I created the Tableau Dashboard to display the patterns based on the initial exploratory data analysis. The data was then used to create two different approaches to generating nicknames based on a user given input name. Both methods used a LSTM Neural Network for training. The character-based generation method did not have good results; however, the word-based generation method had great results due to the addition of affix's being encoded into the data as embeddings.
 
+![Tabluea Graph](https://github.com/Alexander-Kahanek/trump_nickname_gen/blob/main/graphs/trump_graph.png)
+
 # Python Notebooks
 
 These notebooks were created as a walkthrough of the whole process taken from the inital data analysis, to the end product of a working model.
