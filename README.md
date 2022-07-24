@@ -17,7 +17,7 @@ These notebooks were created as a walkthrough of the whole process taken from th
 
 + 2_character.nn.gen.ipynb
   - This notebook was the first attempt at training the model, using a character based approach.
-  - This character based approach did not have goo results, and thus a word based model was created.
+  - This character based approach did not have good results, and thus a word based model was created.
 
 + 3_word.nn.gen.ipynb
   - This notebook is the creation of the word based approach to nickname generation.
